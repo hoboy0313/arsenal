@@ -1,0 +1,28 @@
+{
+  "name": "console-installer-crx",
+  "version": "0.0.1",
+  "description": "A chrome extension",
+  "main": "libs/index.js",
+  "scripts": {
+    "clear": "rm -rf libs/",
+    "dev": "pnpm clear && NODE_ENV=dev rollup -w -c rollup.config.ts",
+    "build": "pnpm clear && NODE_ENV=prod rollup -c rollup.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^13.1.2",
+    "@types/chrome": "^0.0.174",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.62.0",
+    "rollup-plugin-serve": "^1.1.0"
+  },
+  "dependencies": {
+    "tiza": "^2.2.1"
+  }
+}

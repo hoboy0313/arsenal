@@ -1,0 +1,12 @@
+# build assets
+**/libs/**
+
+# error-log
+.pnpm-debug.log
+
+# config files
+rollup.config.ts
+rollup.config.js
+
+# deps
+node_modules

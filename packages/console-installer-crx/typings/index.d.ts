@@ -1,0 +1,3 @@
+interface Window {
+    $i: any;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "console-installer-crx",
+  "version": "1.0",
+  "description": "import npm package in console",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["libs/index.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "libs/*"
+  ]
+}
